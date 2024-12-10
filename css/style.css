@@ -43,6 +43,10 @@ body {
     padding-top: 20px;
     font-weight: 700;
 }
+#profile {
+    width: 35%;
+    padding-top: 50px;
+}  
 
 .header-left {
     float: left;
