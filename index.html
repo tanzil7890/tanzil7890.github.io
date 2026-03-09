@@ -74,32 +74,31 @@
 
 <body>
 
-<div class="header" style="position: sticky; top: 0; z-index: 100; background-color: transparent; padding: 10px 0;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; gap: 10px;">
-        <div style="flex-shrink: 0;">
-            <a href="https://tanzilidrisi.substack.com/" target="_blank" style="text-decoration: none;">
-                <img src="substack-image.jpg" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover; border: 1px solid #EEE;" alt="Tanzil's Substack">
-            </a>
+<div class="header" style="position: sticky; top: 0; z-index: 100; background-color: white; padding: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+    <nav class="site-nav">
+        <a href="/" class="nav-name">Tanzil Idrisi</a>
+        <div class="nav-links">
+            <a href="#now" class="nav-link">now</a>
+            <a href="#about" class="nav-link">about</a>
+            <a href="#experience" class="nav-link">exp</a>
+            <a href="#updates" class="nav-link">updates</a>
+            <a href="#projects" class="nav-link">projects</a>
         </div>
-        <div style="flex-shrink: 0;">
-            <iframe src="https://tanzilidrisi.substack.com/embed" width="320" height="200" style="border:1px solid #EEE; background:white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
-        </div>
-    </div>
+    </nav>
 </div>
 
+
+
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container" style="padding-top: 40px;">
 
 
-        <img src="image3.png" style="width: 250px; height: 250px; padding-top: -20px; border-radius: 50%; object-fit: cover;" id="profile">
-        <!-- <img src="image3.png" id="profile"> -->
+        <div class="profile-section">
+        <img src="image3.png" class="profile-photo" id="profile">
 
-
-
-        <div class="header">
+        <div class="profile-info">
             <p class="name">M. Tanzil Idrisi</p>
-            <p style="margin-bottom: 15px;">CS + Math @ Beloit. Experimenting in public. Caramel macchiato addict.
-            </p>
+            <p class="bio-text">CS + Math @ Beloit. Experimenting in public. Caramel macchiato addict.</p>
             <!-- <div class="news">Hello! Welcome to my corner of the internet :)</div> -->
             <div class="connect">
                 <a href="https://twitter.com/TanzilIdrisi_" style="text-decoration: none;">
@@ -161,128 +160,147 @@
 
             </div>
         </div>
+        </div><!-- /.profile-section -->
 
         <!-- CURRENTLY -->
-        <div class="row personal-elem">
-            <div class="two columns tag">now</div>
-            <div class="ten columns">
-                <ul class="list">
-                    <li>Working on my startup <a href="https://www.producthunt.com/posts/outhad" class="link highlight-g" target="_blank">Outhad AI: Re-defining the way your customers interact with your store.</a> 🎉</li>
-                    <li>Currently working on a <a href="https://www.producthunt.com/posts/markov-beta-release" class="link highlight-g" target="_blank">Markov: AI-based Effortless Screen Recording and Smart Editing Tool.</a></li>
-                    <li>Open Source: working on a <a href="https://github.com/tanzil7890/TypeA11y" class="link highlight-g" target="_blank">TypeA11y: powerful TypeScript/Babel compiler plugin that enforces accessibility best practices at compile time, helping developers catch common accessibility issues early and ensuring WCAG compliance.</a></li>
-                    <li>Stealth working on a <a href="#" class="link highlight-g" id="slimeCodeLink">Slime Code: Agentic AI-based Code Editor</a></li>
-                    <li>Exploring Transformers, Diffusion Models, LLMs, Computer Vision, Machine learning, and Android/IOS at Beloit.</li>
-                    <li>Working on some fun side projects and busy writing something... 🎉</li>
-                </ul>
-            </div>
-        </div>
+        <section class="site-section" id="now">
+            <h2 class="section-label">Now</h2>
+            <ul class="list">
+                <li>Working on my startup <a href="https://www.producthunt.com/posts/outhad" class="link highlight-g" target="_blank">Convertive by Outhad AI: Re-defining the way your customers interact with your store.</a> 🎉</li>
+                <li>Currently working on a <a href="https://www.producthunt.com/posts/markov-beta-release" class="link highlight-g" target="_blank">Markov: AI-based Effortless Screen Recording and Smart Editing Tool.</a></li>
+                <li>Open Source: working on a <a href="https://github.com/tanzil7890/TypeA11y" class="link highlight-g" target="_blank">TypeA11y: powerful TypeScript/Babel compiler plugin that enforces accessibility best practices at compile time, helping developers catch common accessibility issues early and ensuring WCAG compliance.</a></li>
+                <!-- <li>Stealth working on a <a href="#" class="link highlight-g" id="slimeCodeLink">Slime Code: Agentic AI-based Code Editor</a></li> -->
+                <li>Exploring Transformers, Diffusion Models, LLMs, Computer Vision, Machine learning, and Android/IOS at Beloit.</li>
+                <li>Working on some fun side projects and busy writing something... 🎉</li>
+            </ul>
+        </section>
 
         <!-- ABOUT -->
-        <div class="row personal-elem">
-            <div class="two columns tag">about</div>
-            <div class="ten columns">
-                <p>I'm primarily a technical builder and serial founder built 2 startups <a href="https://outlfy.com/" class="link highlight-b">Outfly</a> and <a href="https://tanzilidrisi68.medium.com/boxally-bought-my-farctalxr-788a7985e15f" class="link highlight-b">FractalXR</a>(Acquired by Boxally). My <a
-                        href="#" class="link highlight-g">academic background</a>
-                    is in applied Math, CS and Quantitative Economics, with splashes of philosophy, physics, and
-                    psychology.</p>
-
-                <p>I spend a lot of time building 
-                    <a href="https://outhad.com/" class="link highlight-b">OUTHAD AI</a>, reading works by Jeffrey Archer, Jaun Elia, and J.K. Rowling, and playing and watching cricket.</p>
-                <!--      href="#" class="link highlight-p">Friends and Family</a>. -->
-                <!-- <p>Things I'm thinking about:</p>
-                <ul class="list" style="margin-top: -20px; padding-left: 30px;">
-                    <li><b>The unbundling of finance 💰.</b> How can we use software to make financial instruments more
-                        accessible? What kinds of e-commerce and payment tools are needed to help mom and pop shops keep
-                        up with large enterprises? </li>
-                    <li><b>Manufacturing and industry 🛠️.</b> What does the factory of the future look like? How can we
-                        modernize our decaying industries and equip workers with a 21st century toolbelt?</li>
-                    <li><b>Data infrastructure 📈.</b> As the amount of data in the world continues to explode, how can
-                        we
-                        increase developer productivity and improve the building blocks of the internet, like
-                        search, messaging, and personalized content? </li>
-                </ul> -->
-                <!-- <p>In my free time, I enjoy <a href="#" class="link highlight-y">tearing
-                        apart longform essays</a>, practicing photography, playing
-                    ultimate
-                    frisbee,
-                    and defying gravity (by lifting heavy weights).</p> -->
-            </div>
-        </div>
+        <section class="site-section" id="about">
+            <h2 class="section-label">About</h2>
+            <p>I'm primarily a technical builder and serial founder — built 2 startups <a href="https://outlfy.com/" class="link highlight-b">Outfly</a> and <a href="https://tanzilidrisi68.medium.com/boxally-bought-my-farctalxr-788a7985e15f" class="link highlight-b">FractalXR</a> (acquired by Boxally). My <a href="#" class="link highlight-g">academic background</a> is in applied Math, CS and Quantitative Economics, with splashes of philosophy, physics, and psychology.</p>
+            <p>I spend a lot of time building <a href="https://tryconvertive.com/" class="link highlight-b">Convertive by Outhad AI</a>, reading works by Jeffrey Archer, Jaun Elia, and J.K. Rowling, and playing and watching cricket.</p>
+        </section>
         
         <!-- Experience -->
-        <div class="row personal-elem">
-            <div class="two columns tag">experience</div>
-            <div class="ten columns">
-                <p> <a style="display: inline-block;" class="link highlight-g">Outhad AI</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Beloit, Wisconsin, United States</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Co-Founder and CEO</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Sep 2024 - Present</span><br>
-                    ◦ genera8tor(gBeta) incubated startup. Working on improving the way you search for retailer to end users, bridging the gap between what you speak to what you get by leveraging generative AI, computer vision, natural language processing, and machine, and deep learning.<br>
-                    ◦ Incubated by genera8tor.</p>
+        <section class="site-section" id="experience">
+            <h2 class="section-label">Experience</h2>
 
-                <p> <a style="display: inline-block;" class="link highlight-g">DAAD German Academic Exchange Service</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Lübeck, Germany</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Undergraduate Research Fellow</a> 
-                    <span style="text-align: right; float: right;width: 40%;">May 2024 - Aug 2024</span><br>
-                    ◦ Innovated noise-aware 3D U-Net model, improving PET image quality by 15%, surpassing U-Net performance.<br>
-                    ◦ Worked on AG-PET: Anatomically Guided Multimodal U-Net for PET denoising.<br>
-                    ◦ Constructed patch-based NAFNET: Noise-Aware Fusion Network.<br>
-                    ◦ Worked on Self-Supervised Diffusion model to make the diffusion model noise aware to improve the accuracy of denoising.<br>
-                    ◦ Presented research findings at the IEEE NSS Medical Imaging Conference 2024 in Tampa, Florida <br>
-                    <span style="font-style: italic;">Supervisor: <a href="https://www.imt.uni-luebeck.de/institute/staff/ezzat-elmoujarkach" target="_blank">Ezzat Elmoujarkach</a>, <a href="https://www.imt.uni-luebeck.de/institute/staff/magdalena-rafecas" target="_blank">Magdalena Rafecas</a></span>
-                </p>
-                    
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">Convertive by Outhad AI</span>
+                        <span class="exp-location">Madison, Wisconsin, United States</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">CTO and CEO</span>
+                        <span class="exp-dates">Sep 2024 – Present</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>genera8tor(gBeta) incubated startup. Working on improving the way you search for retailer to end users, bridging the gap between what you speak to what you get by leveraging generative AI, computer vision, natural language processing, and machine, and deep learning.</li>
+                        <li>Incubated by genera8tor.</li>
+                    </ul>
+                </div>
 
-                <p> <a style="display: inline-block;" class="link highlight-g">outLfy</a> 
-                    <span style="text-align: right; float: right;width: 40%;">United States · Remote</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Co-Founder and CEO</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Oct 2022 - Aug 2024</span><br>
-                    ◦ Outlfy, where we provide custom AI solutions to various companies from AI marketing to branding, and data-driven solutions converge for businesses of all sizes.<br>
-                    ◦ We primarily focus on the Financial and Ecommerce sectors of businesses.<br>
-                    ◦ We specialize in helping small to medium-sized enterprises grow efficiently and cost-effectively.<br>
-                    ◦ Our AI-powered strategies elevate customer engagement and revenue, simplifying operations along the way.</p>
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">Google</span>
+                        <span class="exp-location">Remote</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Software Engineer Fellow </span>
+                        <span class="exp-dates">Jul 2024 – Sep 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Selected from 400+ applicants for a competitive 10-week program focused on enhancing SE skills through hands-on projects, interview prep, and technical workshops.</li>
+                        <li>Received 1-on-1 mentorship from Google SWEs; collaborated with peers on innovative solutions and gained exposure to industry best practices.</li>
+                    </ul>
+                </div>
 
-                <p> <a style="display: inline-block;" class="link highlight-g">Beloit College</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Beloit, Wisconsin</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Data Science Engineer</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Aug 2023 - May 2024</span><br>
-                    ◦ Developed a Python-based desktop application for automating tasks and saved $10K+ by in-house production of custom Financial Aid letters for each student, previously done by outsourced services.</p>
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">DAAD German Academic Exchange Service</span>
+                        <span class="exp-location">Lübeck, Germany</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Undergraduate Research Fellow</span>
+                        <span class="exp-dates">May 2024 – Aug 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Innovated noise-aware 3D U-Net model, improving PET image quality by 15%, surpassing U-Net performance.</li>
+                        <li>Worked on AG-PET: Anatomically Guided Multimodal U-Net for PET denoising.</li>
+                        <li>Constructed patch-based NAFNET: Noise-Aware Fusion Network.</li>
+                        <li>Worked on Self-Supervised Diffusion model to make the diffusion model noise aware to improve the accuracy of denoising.</li>
+                        <li>Presented research findings at the IEEE NSS Medical Imaging Conference 2024 in Tampa, Florida.</li>
+                    </ul>
+                    <p class="exp-note">Supervisor: <a href="https://www.imt.uni-luebeck.de/institute/staff/ezzat-elmoujarkach" target="_blank">Ezzat Elmoujarkach</a>, <a href="https://www.imt.uni-luebeck.de/institute/staff/magdalena-rafecas" target="_blank">Magdalena Rafecas</a></p>
+                </div>
 
-                <p> <a style="display: inline-block;" class="link highlight-g">Carnegie Mellon University School of Computer Science</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Pittsburgh, Pennsylvania</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Machine Learning Research Intern</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Aug 2023 - Jan 2024</span><br>
-                    ◦ Developed a Python-based mobile system for 3D face reconstruction from 2D images, aimed at supporting cancer and cosmetic surgery planning.<br>
-                    ◦ Leveraged a GAN trained with PyTorch, achieving 90.2% accuracy rate on the LFW Dataset.<br>
-                    ◦ Utilized DLib to identify 68 key facial landmarks and employed SciPy, PyMesh, and Matplotlib.<br>
-                    <span style="font-style: italic;">Supervisor: Dr. Ganesh Mani</span></p>
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">outLfy</span>
+                        <span class="exp-location">United States · Remote</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Co-Founder and CEO</span>
+                        <span class="exp-dates">Oct 2022 – Aug 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Provided custom AI solutions to companies from AI marketing to branding, and data-driven solutions for businesses of all sizes.</li>
+                        <li>Primarily focused on the Financial and Ecommerce sectors of businesses.</li>
+                        <li>Specialized in helping small to medium-sized enterprises grow efficiently and cost-effectively.</li>
+                        <li>AI-powered strategies elevate customer engagement and revenue, simplifying operations along the way.</li>
+                    </ul>
+                </div>
 
-                <p> <a style="display: inline-block;" class="link highlight-g">KFin Technologies Ltd.</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Mumbai, India</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Software Engineer Intern</a> 
-                    <span style="text-align: right; float: right;width: 40%;">May 2023 - Aug 2023</span><br>
-                    ◦ Developed and launched a server using Google Cloud OAuth 2.0 on AWS ECS for ML lifecycle management.<br>
-                    ◦ Authored Python scripts for monitoring Mutual Fund Scheme Expense Ratios.<br>
-                    ◦ Engineered AWS Lambda Functions for verification of investor information across 20+ Asset Management firms.</p>
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">Beloit College</span>
+                        <span class="exp-location">Beloit, Wisconsin</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Data Science Engineer</span>
+                        <span class="exp-dates">Aug 2023 – May 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed a Python-based desktop application for automating tasks and saved $10K+ by in-house production of custom Financial Aid letters for each student, previously done by outsourced services.</li>
+                    </ul>
+                </div>
 
-               <!--  <p> <a style="display: inline-block;" class="link highlight-g">Franklin Templeton</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Remote</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Data Science Intern</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Feb 2022 - Jul 2022</span><br>
-                    ◦ Extracted Price and Discount Margin from Color, merged and updated BWiC data.<br>
-                    ◦ Developed robust web scraper for inventory emails with daily database updates.<br>
-                    ◦ Created Relevancy Detection Module using AlBERT model with 93% accuracy.</p> -->
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">Carnegie Mellon University School of Computer Science</span>
+                        <span class="exp-location">Pittsburgh, Pennsylvania</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Machine Learning Research Intern</span>
+                        <span class="exp-dates">Aug 2023 – Jan 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed a Python-based mobile system for 3D face reconstruction from 2D images, aimed at supporting cancer and cosmetic surgery planning.</li>
+                        <li>Leveraged a GAN trained with PyTorch, achieving 90.2% accuracy rate on the LFW Dataset.</li>
+                        <li>Utilized DLib to identify 68 key facial landmarks and employed SciPy, PyMesh, and Matplotlib.</li>
+                    </ul>
+                    <p class="exp-note">Supervisor: Dr. Ganesh Mani</p>
+                </div>
 
-               <!--  <p> <a style="display: inline-block;" class="link highlight-g">Tars</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Remote</span><br>
-                    <a style="display: inline-block; font-size:smaller;" class="link highlight-b">Full Stack Developer</a> 
-                    <span style="text-align: right; float: right;width: 40%;">Aug 2021 - Jan 2022</span><br>
-                    ◦ Developed Admin Panel using NodeJS React to improve customer support.<br>
-                    ◦ Worked on MongoDB database synchronization and containerization with Docker.<br>
-                    ◦ Streamlined API documentation process, reducing creation time by 60%.</p> -->
-            </div>
-        </div>
-       
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <span class="exp-org highlight-g">KFin Technologies Ltd.</span>
+                        <span class="exp-location">Mumbai, India</span>
+                    </div>
+                    <div class="exp-role-row">
+                        <span class="exp-role highlight-b">Software Engineer Intern</span>
+                        <span class="exp-dates">May 2023 – Aug 2023</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed and launched a server using Google Cloud OAuth 2.0 on AWS ECS for ML lifecycle management.</li>
+                        <li>Authored Python scripts for monitoring Mutual Fund Scheme Expense Ratios.</li>
+                        <li>Engineered AWS Lambda Functions for verification of investor information across 20+ Asset Management firms.</li>
+                    </ul>
+                </div>
+
+        </section>
+
        <!--  <div class="row personal-elem">
             <div class="two columns tag">thoughts</div>
             <div class="ten columns"> -->
@@ -330,17 +348,11 @@
         <!-- add a card with some text -->
 
         <!-- connect -->
-         <div class="row personal-elem">
-            <div class="two columns tag">updates</div>
-            <div class="ten columns">
-                <p>One of my more recent goals is to send out personal life updates every few months to those
-                    who are interested. If you're interested, fill out this <a class=" highlight-y link"
-                        href="https://tanzilidrisi.substack.com/">form</a>.</p>
-                <p>I also occasionaly write about topics I find interesting at <a class=" highlight-b link"
-                        href="https://tanzilidrisi68.medium.com/">Medium</a>.
-                </p>
-            </div>
-        </div> 
+        <section class="site-section" id="updates">
+            <h2 class="section-label">Updates</h2>
+            <p>One of my more recent goals is to send out personal life updates every few months to those who are interested. If you're interested, fill out this <a class="highlight-y link" href="https://tanzilidrisi.substack.com/">form</a>.</p>
+            <p>I also occasionaly write about topics I find interesting at <a class="highlight-b link" href="https://tanzilidrisi68.medium.com/">Medium</a>.</p>
+        </section> 
 
          <!-- CURRENTLY -->
          <!-- <div class="row personal-elem">
@@ -454,267 +466,200 @@
                 </div>
             </div>
         </div> -->
-        <br>
         <!-- PROJECTS -->
-        <div class="row personal-elem">
-            <div class="two columns tag">projects</div>
-            <div class="ten columns">
-                
-                <div class="row project">
-                    <div class="twelve columns"><b>High-Performance Memory Pool Trading System:</b> Built ultra-high performance HFT network analyzer with custom memory pool achieving 2.27M ops/sec and system throughput of 127K+ messages/second. Features real-time arbitrage detection across NYSE/NASDAQ/CBOE, sub-microsecond latency optimization, lock-free queues, and regulatory compliance for production trading environments. (C, Python, C++, Scapy)
-                        [<a
-                            href="https://github.com/tanzil7890/AK-Bypass-Packet-Filtering" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>High-Frequency FX Arbitrage Engine:</b> Engineered production-grade FX arbitrage engine achieving sub-20s latency in Python. Delivered 99.5% performance optimization, 1M+ msg/sec throughput, and enterprise risk management across 16 institutional liquidity providers.
-                        [<a
-                            href="https://github.com/tanzil7890/High-Frequency-FX-Arbitrage-Engine" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>CraftClans:</b> Build your game and custom 3D object for game - Built a backend of a Cursor for 3D modelling with a custom physics engine for a game. Developed a game which is blend of Clash of Clans + Minecraft + Cursor for 3D modelling with building physics.
-                        [<a
-                            href="https://github.com/tanzil7890/CraftClan" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>HALO-CI:</b> A High-performance Compiler Accelerator for LLM and Linear Algebra Operations.
-                        [<a
-                            href="https://github.com/tanzil7890/HALO-CI" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>PolyFlow-dev-ai LLM-Powered Data Processing Framework:</b> Programmed a semantic data processing python package integrating LLMs with DataFrame operations for intelligent
-                        data analysis; implemented modular semantic operators like (search, transform, cluster) with multi-modal processing
-                        support and automated index management for scalable data operations.
-                        [<a
-                            href="https://github.com/tanzil7890/polyflow-dev-ai" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>SynergyML:</b> Python framework for multimodal analysis, specializing in synchronized video-audio processing, emotion detection, and LLM-enhanced analysis.
-                        [<a
-                            href="https://github.com/tanzil7890/synergyML" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>QNV-Query Nexus Vault:</b> A powerful middleware package that provides a unified interface for executing SQL, Cypher (Neo4j), and vector similarity queries.
-                        [<a
-                            href="https://github.com/Outhad-Search/QNV" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Kora AI:</b> Create and deploy Voice AI Agents qualify leads, boost sales, automate customer support, and streamline recruitment and hiring.
-                        [<a
-                        href="https://github.com/tanzil7890/kora-ai" target="_blank">github</a>]
-                
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Avatar App:</b> Cursor for storytelling - instantly turn your sketches into animated 3D worlds with AI.
-                        [<a
-                        href="https://github.com/tanzil7890/AvatarApp" target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>RailsClock:</b> A Rails engine for recording, replaying, and debugging HTTP requests with their database interactions in real-time.
-                        [<a
-                        href="https://github.com/tanzil7890/RailsClock" target="_blank">github</a>]
-                        
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>TypeA11y:</b> powerful TypeScript/Babel compiler plugin that enforces accessibility best practices at compile time, helping developers catch common accessibility issues early and ensuring WCAG compliance. [<a href="https://github.com/tanzil7890/TypeA11y" target="_blank">github</a>]
-                        [<a
-                        href="https://github.com/tanzil7890/TypeA11y"  target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>PakerKit:</b> Transform any document into a dynamic template and generate customized versions in seconds, saving you hours of manual work.
-                        [<a
-                        href="https://github.com/tanzil7890/PakerKit"  target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>HoloQuant: </b> A comprehensive quantitative analytics platform designed to provide insights into federal contract data and spending patterns for investment analysis and risk management.
-                        [<a
-                        href="https://github.com/tanzil7890/HoloQuant"  target="_blank">github</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Live Time Gesture Recognition:</b> Trained high-accuracy hand gesture classifiers by transfer learning from VGG-16 and ResNet-50 CNN architectures.
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Roco AI:</b> Outfit Recommender: fashion outfit generator powered by genAI and LLM, leveraging user order
-                        history and cart data to provide personalized outfit recommendations. [<a
-                            href="https://github.com/tanzil7890/Fashion_setter_genAI" target="_blank">github</a>]<!--  [<a
-                            href="#" target="_blank">github</a>] -->
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>OptiTrade AI:</b> Participated in University of Trading Competition 2023. Financial analysis tools designed to perform various tasks such as optimizing portfolio weights using genetic algorithms, evaluating risk with Conditional Value at Risk (CVaR), and maximizing the Sharpe ratio to achieve the best risk-adjusted returns. [<a
-                            href="https://github.com/tanzil7890/UTC2023" target="_blank">github</a>] <!-- [<a
-                            href="#" target="_blank">github</a>] -->
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Complaident AI: </b> multi-modal classification system that leverages both text and image data to identify complaints in reviews. [<a
-                            href="https://github.com/tanzil7890/Amazon_multimodal_complaint_identification" target="_blank">demo</a>] <!-- [<a
-                            href="#" target="_blank">github</a>] -->
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Intersect Browser:</b> AI powered OS browser to search and navigate the web and manage file explorer with built-in terminal. [<a
-                            href="https://github.com/tanzil7890/Intersect_browser" target="_blank">demo</a>] <!-- [<a
-                            href="#" target="_blank">github</a>] -->
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>Exercise Tracking App:</b> This project is Real-Time Exercise Monitoring System With Pose Detection, Mediapipe, and OpenCV.
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><b>W2P:</b> Words to Words Poem Generator: This project is End-to-End Poetry Generation from a list of topics which includes given words as their threads by using T5: Text-To-Text Transfer Transformer.
-                    </div>
-                </div>
-                <!-- <div class="row project">
-                    <div class="twelve columns">Stable Diffusion + ControlNet Experiments [<a
-                            href="https://www.youtube.com/shorts/XrTukb3toDo"
-                            target="_blank">coca-cola</a>] [<a href="https://www.youtube.com/watch?v=33br_bgwipQ"
-                            target="_blank">apple</a>]
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Merlin: A Magical Text Editor That Edits Text [<a
-                            href="https://twitter.com/varunshenoy_/status/1640764666946424832"
-                            target="_blank">twitter</a>] [<a href="https://merlin-editor.vercel.app/"
-                            target="_blank">demo</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">rizzGPT: A GPT-Powered AR Teleprompter [<a
-                            href="https://twitter.com/bryanhpchiang/status/1639830383616487426"
-                            target="_blank">demo</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Auralbyte: Audio to Short-Form Video Made Simple [<a
-                            href="https://twitter.com/varunshenoy_/status/1630678203219193857?s=20"
-                            target="_blank">demo</a>] [<a href="https://varunshenoy.com/auralbyte/"
-                            target="_blank">site</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">GraphGPT: Extracting Knowledge Graphs from Natural Language [<a
-                            href="https://twitter.com/varunshenoy_/status/1620511932930490372?s=20"
-                            target="_blank">demo</a>] [<a href="https://github.com/varunshenoy/GraphGPT"
-                            target="_blank">github</a>] [<a href="https://news.ycombinator.com/item?id=34605772"
-                            target="_blank">hn</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns"><a href="https://tenweeks.xyz" target="_blank">tenweeks.xyz</a>: Fast
-                        Neural Search for Stanford Classes [<a
-                            href="https://twitter.com/varunshenoy_/status/1616603359158636545?s=20"
-                            target="_blank">demo</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Prof. Tom Hanks Bot Explains Word Vectors [<a
-                            href="https://twitter.com/varunshenoy_/status/1610717227250225152?s=20"
-                            target="_blank">demo</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Coauthor: English to LaTeX, Powered by AI [<a
-                            href="https://twitter.com/varunshenoy_/status/1599844361470377984?s=20&t=Ti6Des-u12TRtRn1ibkouA"
-                            target="_blank">demo</a>] [<a href="https://github.com/varunshenoy/coauthor"
-                            target="_blank">github</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">A CHIP-8 Emulator Written in Rust [<a
-                            href="https://github.com/varunshenoy/rusty-chip8" target="_blank">github</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Magicwall: A React Component for Tokengating Content [<a
-                            href="https://github.com/varunshenoy/magicwall" target="_blank">github</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Unfold: A Small, Sandboxed DSL for Querying Crypto Wallets [<a
-                            href="https://youtu.be/DVNx2sZIUuc" target="_blank">demo</a>] [<a
-                            href="https://github.com/varunshenoy/unfold-lang" target="_blank">github</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Surround.py: A Framework for Immersive Spatial Audio Simulation and
-                        Education [<a href="https://youtu.be/td6Bv4rXruA" target="_blank">demo</a>] [<a
-                            href="https://drive.google.com/file/d/1OJ-hxY4pB_YSWVjqa-5KIeeadIcZRsNg/view?usp=sharing"
-                            target="_blank">paper</a>] [<a href="https://github.com/varunshenoy/surroundpy">github</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">A Deep Learning Approach for Image Reconstruction from Smartphone Under
-                        Display Camera Technology [<a
-                            href="http://stanford.edu/class/ee367/Winter2022/report/dhawan_shenoy_report.pdf"
-                            target="_blank">paper</a>]
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Fun with the Fourier Series [<a href="MATH_171_WIM.pdf">paper</a>]</div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">CardinalKit [<a
-                            href="https://github.com/CardinalKit/CardinalKit">github</a>] [<a
-                            href="https://cardinalkit.org/">website</a>]</div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">BitFlow: A Gradient Descent Bit-Width
-                        Optimization Technique for Fixed Function
-                        Hardware Design</div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Raspberry Pi Magic Mirror on Bare Metal [<a
-                            href="https://www.youtube.com/watch?v=d7q8KYYMZ0o">demo</a>]</div>
-                </div>
-                 <div class="row project">
-                    <div class="twelve columns">A Web App for Radiograph Annotation [<a
-                            href="https://www.youtube.com/watch?v=qzeoS0sI7SE">demo</a>]
-                </div>
-                 <div class="row project">
-                    <div class="twelve columns">A Novel Domain Adaptation Framework for
-                        Medical Image Segmentation [<a href="https://arxiv.org/pdf/1810.05732.pdf">arxiv</a>]</div>
-                </div> 
-                 <div class="row project">
-                    <div class="twelve columns">Deepwound: Automated Postoperative Wound
-                        Assessment and Surgical Site Surveillance through
-                        Convolutional Neural Networks [<a
-                            href="https://ieeexplore.ieee.org/abstract/document/8621130">ieee</a>]
-                        [<a href="https://www.youtube.com/watch?v=HQveQxJZ1x8">demo</a>]</div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Utilizing Smartphone-Based Machine Learning in Medical Monitor Data
-                        Collection: Seven Segment
-                        Digit Recognition [<a href="https://pubmed.ncbi.nlm.nih.gov/29854226/">pubmed</a>] [<a
-                            href="https://apps.apple.com/sl/app/biosnap/id1246381298">app
-                            store</a>]</div>
-                </div> 
-                 <div class="row project">
-                    <div class="twelve columns"> Nucleon: Chemistry Assistant [<a
-                            href="https://apps.apple.com/sl/app/nucleon-chemistry-assistant/id1159810306">app
-                            store</a>]</div>
-                </div>
-                <div class="row project">
-                    <div class="twelve columns">Summit: Summarized News Reader [<a
-                            href="https://apps.apple.com/sl/app/summit-summarized-news-reader/id1106793298">app
-                            store</a>]</div>
-                </div> 
+        <section class="site-section" id="projects">
+            <h2 class="section-label">Projects</h2>
 
-                <div class="row article">
-                    <div class="end-article-title">
-                        <span style="font-size: 12px;">You can find all of my projects <a class="end-article-link"
-                                href="projects.html">
-                                here
-                            </a></span>
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">High-Performance Memory Pool Trading System</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/AK-Bypass-Packet-Filtering" target="_blank" class="proj-link">github</a>]</div>
                     </div>
-                </div> -->
+                    <p class="proj-desc">Built ultra-high performance HFT network analyzer with custom memory pool achieving 2.27M ops/sec and system throughput of 127K+ messages/second. Features real-time arbitrage detection across NYSE/NASDAQ/CBOE, sub-microsecond latency optimization, lock-free queues, and regulatory compliance for production trading environments.</p>
+                    <div class="proj-tags"><span class="tech-tag">C</span><span class="tech-tag">C++</span><span class="tech-tag">Python</span><span class="tech-tag">Scapy</span></div>
+                </div>
 
-            </div>
-        </div>
-        <br>
-        <br>
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">High-Frequency FX Arbitrage Engine</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/High-Frequency-FX-Arbitrage-Engine" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Engineered production-grade FX arbitrage engine achieving sub-20s latency. Delivered 99.5% performance optimization, 1M+ msg/sec throughput, and enterprise risk management across 16 institutional liquidity providers.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">HFT</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">CraftClans</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/CraftClan" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Built a backend cursor for 3D modelling with a custom physics engine. A game blending Clash of Clans + Minecraft + Cursor for 3D modelling with building physics.</p>
+                    <div class="proj-tags"><span class="tech-tag">C++</span><span class="tech-tag">Physics Engine</span><span class="tech-tag">3D</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">HALO-CI</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/HALO-CI" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">A High-performance Compiler Accelerator for LLM and Linear Algebra Operations.</p>
+                    <div class="proj-tags"><span class="tech-tag">C++</span><span class="tech-tag">LLVM</span><span class="tech-tag">LLMs</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">PolyFlow — LLM-Powered Data Processing Framework</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/polyflow-dev-ai" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Semantic data processing Python package integrating LLMs with DataFrame operations for intelligent data analysis. Implements modular semantic operators (search, transform, cluster) with multi-modal processing support and automated index management.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">LLMs</span><span class="tech-tag">NLP</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">SynergyML</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/synergyML" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Python framework for multimodal analysis, specializing in synchronized video-audio processing, emotion detection, and LLM-enhanced analysis.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">LLMs</span><span class="tech-tag">CV</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">QNV — Query Nexus Vault</span>
+                        <div class="proj-links">[<a href="https://github.com/Outhad-Search/QNV" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">A powerful middleware package that provides a unified interface for executing SQL, Cypher (Neo4j), and vector similarity queries.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">SQL</span><span class="tech-tag">Neo4j</span><span class="tech-tag">Vector DB</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Kora AI</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/kora-ai" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Create and deploy Voice AI Agents to qualify leads, boost sales, automate customer support, and streamline recruitment and hiring.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">Voice AI</span><span class="tech-tag">LLMs</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Avatar App</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/AvatarApp" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Cursor for storytelling — instantly turn your sketches into animated 3D worlds with AI.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">GenAI</span><span class="tech-tag">3D</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">RailsClock</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/RailsClock" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">A Rails engine for recording, replaying, and debugging HTTP requests with their database interactions in real-time.</p>
+                    <div class="proj-tags"><span class="tech-tag">Ruby</span><span class="tech-tag">Rails</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">TypeA11y</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/TypeA11y" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Powerful TypeScript/Babel compiler plugin that enforces accessibility best practices at compile time, catching common accessibility issues early and ensuring WCAG compliance.</p>
+                    <div class="proj-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Babel</span><span class="tech-tag">a11y</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">PakerKit</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/PakerKit" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Transform any document into a dynamic template and generate customized versions in seconds, saving you hours of manual work.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">HoloQuant</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/HoloQuant" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">A comprehensive quantitative analytics platform providing insights into federal contract data and spending patterns for investment analysis and risk management.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">Quant Finance</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Live-Time Gesture Recognition</span>
+                    </div>
+                    <p class="proj-desc">Trained high-accuracy hand gesture classifiers by transfer learning from VGG-16 and ResNet-50 CNN architectures.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">VGG-16</span><span class="tech-tag">ResNet-50</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Roco AI — Outfit Recommender</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/Fashion_setter_genAI" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">Fashion outfit generator powered by GenAI and LLMs, leveraging user order history and cart data to provide personalized outfit recommendations.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">GenAI</span><span class="tech-tag">LLMs</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">OptiTrade AI</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/UTC2023" target="_blank" class="proj-link">github</a>]</div>
+                    </div>
+                    <p class="proj-desc">University of Trading Competition 2023. Financial analysis tools for optimizing portfolio weights using genetic algorithms, evaluating risk with CVaR, and maximizing Sharpe ratio for best risk-adjusted returns.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">Quant Finance</span><span class="tech-tag">GenAI</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Complaident AI</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/Amazon_multimodal_complaint_identification" target="_blank" class="proj-link">demo</a>]</div>
+                    </div>
+                    <p class="proj-desc">Multi-modal classification system that leverages both text and image data to identify complaints in reviews.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">NLP</span><span class="tech-tag">CV</span><span class="tech-tag">PyTorch</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Intersect Browser</span>
+                        <div class="proj-links">[<a href="https://github.com/tanzil7890/Intersect_browser" target="_blank" class="proj-link">demo</a>]</div>
+                    </div>
+                    <p class="proj-desc">AI-powered OS browser to search and navigate the web and manage file explorer with a built-in terminal.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">AI</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Exercise Tracking App</span>
+                    </div>
+                    <p class="proj-desc">Real-Time Exercise Monitoring System with Pose Detection using Mediapipe and OpenCV.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">MediaPipe</span><span class="tech-tag">OpenCV</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">W2P — Words to Poem Generator</span>
+                    </div>
+                    <p class="proj-desc">End-to-end poetry generation from a list of topics using T5: Text-To-Text Transfer Transformer.</p>
+                    <div class="proj-tags"><span class="tech-tag">Python</span><span class="tech-tag">T5</span><span class="tech-tag">NLP</span></div>
+                </div>
+
+                <div class="proj-item" style="padding-bottom: 0; border-bottom: none;">
+                    <div class="proj-header">
+                        <span class="proj-name">Slime Code</span>
+                        <div class="proj-links">[<a href="#" class="proj-link slime-link">stealth</a>]</div>
+                    </div>
+                    <p class="proj-desc">Agentic AI-based Code Editor.</p>
+                    <div class="proj-tags"><span class="tech-tag">AI Agents</span><span class="tech-tag">LLMs</span></div>
+                </div>
+
+        </section>
+        <footer class="site-footer">
+            M. Tanzil Idrisi &nbsp;·&nbsp; built with care
+        </footer>
     </div>
 
     <!-- Add dialog box HTML -->
@@ -731,25 +676,49 @@
 
     <!-- Add JavaScript -->
     <script>
-        document.getElementById('slimeCodeLink').addEventListener('click', function(e) {
-            e.preventDefault();
+        // Slime Code dialog — triggers from "now" section link and projects section link
+        function openDialog() {
             document.getElementById('dialogOverlay').style.display = 'block';
-        });
-
+        }
         function closeDialog() {
             document.getElementById('dialogOverlay').style.display = 'none';
         }
-
         function sendEmail() {
             window.location.href = 'mailto:idrisitanzil@gmail.com';
         }
 
-        // Close dialog when clicking outside
-        document.getElementById('dialogOverlay').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeDialog();
-            }
+        const slimeLinkEl = document.getElementById('slimeCodeLink');
+        if (slimeLinkEl) {
+            slimeLinkEl.addEventListener('click', function(e) {
+                e.preventDefault();
+                openDialog();
+            });
+        }
+        document.querySelectorAll('.slime-link').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                openDialog();
+            });
         });
+        document.getElementById('dialogOverlay').addEventListener('click', function(e) {
+            if (e.target === this) closeDialog();
+        });
+
+        // Active nav section highlight via IntersectionObserver
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('#now, #about, #experience, #updates, #projects');
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(function(link) { link.classList.remove('active'); });
+                    const active = document.querySelector('.nav-link[href="#' + entry.target.id + '"]');
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-10% 0px -60% 0px' });
+
+        sections.forEach(function(s) { observer.observe(s); });
     </script>
 
 </body>

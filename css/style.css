@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&family=Overpass:wght@300;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
 ::selection {
     background: #ffeaa7;
     /* WebKit/Blink Browsers */
@@ -14,7 +19,7 @@ body {
     font-family: 'Overpass', Helvetica, sans-serif;
     font-size: 1.51rem;
     color: #4A4A44;
-    font-size: 300;
+    font-weight: 300;
 }
 
 .name {
@@ -55,7 +60,7 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     padding: 3px 7px 3px 7px;
-    fill: #b6d2ee;
+    fill: #8fb3cc;
     border-radius: 5px;
     font-size: 1.3rem;
     -webkit-transition: color .25s, fill .25s, opacity .25s;
@@ -96,7 +101,13 @@ a {
 }
 
 .personal-elem {
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0ec;
+}
+
+#projects {
+    border-bottom: none;
 }
 
 .article-date {
@@ -202,6 +213,336 @@ a {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.nav-link {
+    font-family: 'Overpass Mono', monospace;
+    color: #718093;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    transition: color .25s;
+}
+
+.nav-link:hover {
+    color: #4A4A44;
+}
+
+/* ================================================
+   EXPERIENCE
+   ================================================ */
+.exp-entry {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f2;
+}
+
+.exp-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp-org {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.exp-location {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.1rem;
+    color: #b0b0aa;
+    font-weight: 300;
+    flex-shrink: 0;
+}
+
+.exp-role-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.exp-role {
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.exp-dates {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.1rem;
+    color: #b0b0aa;
+    font-weight: 300;
+    flex-shrink: 0;
+}
+
+.exp-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-bullets li {
+    padding-left: 14px;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 1.55;
+    font-size: 1.4rem;
+    color: #5c5c56;
+}
+
+.exp-bullets li::before {
+    content: "◦";
+    position: absolute;
+    left: 0;
+    color: #ccc;
+}
+
+.exp-note {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #999;
+    margin: 6px 0 0 14px;
+}
+
+/* ================================================
+   PROJECTS
+   ================================================ */
+.proj-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f2;
+}
+
+.proj-item:last-child {
+    border-bottom: none;
+}
+
+.proj-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.proj-name {
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: #3a3a35;
+}
+
+.proj-links {
+    display: flex;
+    gap: 8px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.proj-link {
+    color: rgba(37, 99, 235);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+}
+
+.proj-link:hover {
+    border-bottom-color: rgba(37, 99, 235, 0.35);
+}
+
+.proj-desc {
+    font-size: 1.35rem;
+    color: #6a6a64;
+    line-height: 1.55;
+    margin: 0 0 6px 0;
+}
+
+.proj-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tech-tag {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.9rem;
+    background: #f7f7f4;
+    color: #8a9aaa;
+    padding: 1px 6px;
+    border-radius: 3px;
+    border: 1px solid #eaeae6;
+}
+
+/* ================================================
+   PROFILE
+   ================================================ */
+#profile {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.connect {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+/* ================================================
+   PROFILE SECTION
+   ================================================ */
+.profile-section {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #f0f0ec;
+}
+
+.profile-info {
+    flex: 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.bio-text {
+    color: #999;
+    font-size: 1.4rem;
+    margin: 6px 0 14px;
+    line-height: 1.5;
+}
+
+/* ================================================
+   HOVER STATES
+   ================================================ */
+.exp-entry {
+    border-radius: 4px;
+    transition: background .15s;
+}
+
+.exp-entry:hover {
+    background: #fafaf8;
+}
+
+.proj-item {
+    border-radius: 4px;
+    transition: background .15s;
+}
+
+.proj-item:hover {
+    background: #fafaf8;
+}
+
+/* ================================================
+   ACTIVE NAV STATE
+   ================================================ */
+.nav-link.active {
+    color: #3a3a35;
+    font-weight: 600;
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+.site-footer {
+    text-align: center;
+    padding: 20px 0 32px;
+    color: #c8c8c4;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1rem;
+    border-top: 1px solid #f0f0ec;
+    margin-top: 20px;
+}
+
+/* ================================================
+   SITE NAV (name-left / links-right)
+   ================================================ */
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.nav-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #3a3a35;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    transition: opacity .2s;
+}
+
+.nav-name:hover {
+    opacity: 0.6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+/* ================================================
+   SITE SECTION (replaces .row.personal-elem grid)
+   ================================================ */
+.site-section {
+    padding: 28px 0;
+    border-bottom: 1px solid #f0f0ec;
+    scroll-margin-top: 52px;
+}
+
+.site-section:last-of-type {
+    border-bottom: none;
+}
+
+.section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #c0c0ba;
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 400;
+    margin: 0 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eeeee9;
+}
+
+/* ================================================
+   PROFILE PHOTO (side-by-side)
+   ================================================ */
+.profile-photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ================================================
+   CONTAINER MAX-WIDTH OVERRIDE
+   ================================================ */
+.container {
+    max-width: 720px !important;
 }
 
 /* @media (prefers-color-scheme: dark) {
