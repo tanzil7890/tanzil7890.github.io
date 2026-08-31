@@ -81,7 +81,8 @@
             <a href="#now" class="nav-link">now</a>
             <a href="#about" class="nav-link">about</a>
             <a href="#experience" class="nav-link">exp</a>
-            <a href="#research" class="nav-link">research</a>
+            <a href="#research" class="nav-link">publications</a>
+            <a href="#talks" class="nav-link">talks</a>
             <a href="#updates" class="nav-link">updates</a>
             <a href="#projects" class="nav-link">projects</a>
         </div>
@@ -213,7 +214,7 @@
 
                 <div class="exp-entry">
                     <div class="exp-header">
-                        <span class="exp-org highlight-g">Wish</span>
+                        <span class="exp-org highlight-g">Shopify</span>
                         <span class="exp-location">San Francisco, California</span>
                     </div>
                     <div class="exp-role-row">
@@ -313,25 +314,33 @@
 
                 <div class="exp-entry">
                     <div class="exp-header">
-                        <span class="exp-org highlight-g">KFin Technologies Ltd.</span>
-                        <span class="exp-location">Mumbai, India</span>
+                        <span class="exp-org highlight-g">Meta</span>
+                        <span class="exp-location">Menlo Park, California</span>
                     </div>
                     <div class="exp-role-row">
                         <span class="exp-role highlight-b">Software Engineer Intern</span>
                         <span class="exp-dates">May 2023 – Aug 2023</span>
                     </div>
                     <ul class="exp-bullets">
-                        <li>Developed and launched a server using Google Cloud OAuth 2.0 on AWS ECS for ML lifecycle management.</li>
-                        <li>Authored Python scripts for monitoring Mutual Fund Scheme Expense Ratios.</li>
-                        <li>Engineered AWS Lambda Functions for verification of investor information across 20+ Asset Management firms.</li>
+                        <li>Built Vision Transformer optimizations for large-scale video understanding workloads across Meta production systems.</li>
+                        <li>Designed adaptive token sampling in PyTorch and integrated it into Reels video understanding pipelines.</li>
+                        <li>Reduced transformer inference latency and FLOPs by 25%, cutting production compute costs by 10%.</li>
                     </ul>
                 </div>
 
         </section>
 
-        <!-- Research -->
+        <!-- Publications -->
         <section class="site-section" id="research">
-            <h2 class="section-label">Research</h2>
+            <h2 class="section-label">Publications</h2>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Paired Replacement: Differential Cache Maintenance for Dynamic Sparse and Mixture-of-Experts Inference</span>
+                    </div>
+                    <p class="proj-desc">AIML Systems Conference 2026 (Accepted) · Oct 2026.</p>
+                    <div class="proj-tags"><span class="tech-tag">2026</span><span class="tech-tag">Efficient Inference</span><span class="tech-tag">Mixture-of-Experts</span><span class="tech-tag">Caching</span></div>
+                </div>
 
                 <div class="proj-item">
                     <div class="proj-header">
@@ -349,6 +358,62 @@
                     </div>
                     <p class="proj-desc">Propensity-logged benchmarks for e-commerce intervention bandits. Dataset, 2026 · Zenodo · DOI 10.5281/zenodo.20651686.</p>
                     <div class="proj-tags"><span class="tech-tag">2026</span><span class="tech-tag">Dataset</span><span class="tech-tag">Benchmark</span><span class="tech-tag">Bandits</span></div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">C-PETAL-3D: Classification Driven Progressive Elimination of Noise Towards Accurate Ultra Low Dose PET Images Using 3D U-Nets</span>
+                    </div>
+                    <p class="proj-desc">IEEE NSS MIC RTSD 2024 · Oct 28, 2024.</p>
+                    <div class="proj-tags"><span class="tech-tag">2024</span><span class="tech-tag">Medical Imaging</span><span class="tech-tag">3D U-Net</span><span class="tech-tag">PET</span></div>
+                </div>
+
+        </section>
+
+        <!-- Talks -->
+        <section class="site-section" id="talks">
+            <h2 class="section-label">Talks</h2>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">ContextKit: Multimodal Graph Memory Architecture for AI</span>
+                    </div>
+                    <p class="proj-desc">National Conference of Undergraduate Research, Pittsburgh, PA · April 7, 2025.</p>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">ContextKit: Memory Layer for Long Running Agents</span>
+                    </div>
+                    <p class="proj-desc">Mid-States Consortium Undergraduate Research Symposium, U. Chicago · Oct 23, 2024.</p>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Efficient Hyperparameter Optimization through Sparse Sampling and Robust Tensor PCA</span>
+                    </div>
+                    <p class="proj-desc">National Conference of Undergraduate Research 2024, Miami, Florida · Apr 10, 2024.</p>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Quantization Optimization: Autoencoders and Lloyd-Max for Data Compression</span>
+                    </div>
+                    <p class="proj-desc">Mid-States Consortium Undergraduate Research Symposium 2023, U. Chicago · Oct 23, 2023.</p>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Pooling Convolutional Capsule Network</span>
+                    </div>
+                    <p class="proj-desc">National Conference of Undergraduate Research 2023, University of Wisconsin-Eau Claire · April 12, 2023.</p>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-header">
+                        <span class="proj-name">Pooling Convolutional Capsule Network</span>
+                    </div>
+                    <p class="proj-desc">Mid-States Consortium Undergraduate Research Symposium 2022, U. Chicago · Oct 23, 2022.</p>
                 </div>
 
         </section>
@@ -830,7 +895,7 @@
 
         // Active nav section highlight via IntersectionObserver
         const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('#now, #about, #experience, #research, #updates, #projects');
+        const sections = document.querySelectorAll('#now, #about, #experience, #research, #talks, #updates, #projects');
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
@@ -844,29 +909,6 @@
 
         sections.forEach(function(s) { observer.observe(s); });
 
-        // Scroll-reveal — staggered fade-up, progressive enhancement
-        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (!reduceMotion) {
-            var revealSel = '.profile-section, .section-label, .list > li, .exp-entry, .proj-item, #about p';
-            var prevParent = null, groupIndex = 0;
-            document.querySelectorAll(revealSel).forEach(function(el) {
-                el.classList.add('reveal');
-                if (el.parentElement === prevParent) { groupIndex++; }
-                else { groupIndex = 0; prevParent = el.parentElement; }
-                el.style.setProperty('--reveal-delay', (Math.min(groupIndex, 8) * 55) + 'ms');
-            });
-
-            var revealObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('in');
-                        revealObserver.unobserve(entry.target);
-                    }
-                });
-            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-
-            document.querySelectorAll('.reveal').forEach(function(el) { revealObserver.observe(el); });
-        }
     </script>
 
 </body>
