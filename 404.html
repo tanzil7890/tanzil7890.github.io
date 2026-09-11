@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. Tanzil Idrisi</title>
+<meta name="robots" content="noindex">
+<script>
+/* Static hosting has no server-side routing, so a direct hit on /work
+   lands here. Hand the requested path to the main page and continue.
+   Anything that is not a known view falls through to the overview. */
+(function(){
+  var path = location.pathname + location.search;
+  try { sessionStorage.setItem('ti-route', path); } catch (e) {}
+  location.replace('/' + location.hash);
+})();
+</script>
+<style>
+  :root{color-scheme:light dark}
+  body{
+    margin:0;min-height:100vh;display:grid;place-items:center;
+    background:#fcfcfb;color:#62685f;
+    font:400 14px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  a{color:#2f6157}
+  @media (prefers-color-scheme:dark){
+    body{background:#15181a;color:#8c948e}
+    a{color:#8cbfb2}
+  }
+</style>
+</head>
+<body>
+  <p>Taking you back &mdash; <a href="/">M. Tanzil Idrisi</a></p>
+</body>
+</html>
